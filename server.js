@@ -145,6 +145,8 @@ if (resultados.length > 0 ) {
 }
 });
 
+// Personagens vivos 
+
 app.get("/personagens/:vivos", (req, res) => {
     const personagensVivos = personagens.filter(personagem => personagem.vivo);
     res.json(personagensVivos)
